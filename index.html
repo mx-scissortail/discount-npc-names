@@ -14,6 +14,22 @@
         justify-content: center;
       }
 
+      @media (orientation: landscape) {
+        #npcs {
+          flex-direction: row;
+        }
+      }
+      
+      @media (orientation: portrait) {
+        #npcs {
+          flex-direction: column;
+        }
+      }
+
+      #npcs > div {
+        display: flex;
+      }
+
       .column {
         min-width: calc(100vw / 8);
         text-align: left;
@@ -49,53 +65,59 @@
   <body>
     <h1>Discount FaTT NPC Names</h1>
     <div id="npcs">
-      <div class="column left">
-        <div>Name:</div>
-        <div id="NPC-1-stat-1"></div>
-        <div id="NPC-1-stat-2"></div>
-        <div id="NPC-1-stat-3"></div>
-        <div id="NPC-1-stat-4"></div>
-        <div id="NPC-1-stat-5"></div>
+      <div>
+        <div class="column left">
+          <div>Name:</div>
+          <div id="NPC-1-stat-1"></div>
+          <div id="NPC-1-stat-2"></div>
+          <div id="NPC-1-stat-3"></div>
+          <div id="NPC-1-stat-4"></div>
+          <div id="NPC-1-stat-5"></div>
+        </div>
+        <div class="column">
+          <div id="NPC-1-name"></div>
+          <div id="NPC-1-stat-1-value"></div>
+          <div id="NPC-1-stat-2-value"></div>
+          <div id="NPC-1-stat-3-value"></div>
+          <div id="NPC-1-stat-4-value"></div>
+          <div id="NPC-1-stat-5-value"></div>
+        </div>
       </div>
-      <div class="column">
-        <div id="NPC-1-name"></div>
-        <div id="NPC-1-stat-1-value"></div>
-        <div id="NPC-1-stat-2-value"></div>
-        <div id="NPC-1-stat-3-value"></div>
-        <div id="NPC-1-stat-4-value"></div>
-        <div id="NPC-1-stat-5-value"></div>
+      <div>
+        <div class="column left">
+          <div>Name:</div>
+          <div id="NPC-2-stat-1"></div>
+          <div id="NPC-2-stat-2"></div>
+          <div id="NPC-2-stat-3"></div>
+          <div id="NPC-2-stat-4"></div>
+          <div id="NPC-2-stat-5"></div>
+        </div>
+        <div class="column">
+          <div id="NPC-2-name"></div>
+          <div id="NPC-2-stat-1-value"></div>
+          <div id="NPC-2-stat-2-value"></div>
+          <div id="NPC-2-stat-3-value"></div>
+          <div id="NPC-2-stat-4-value"></div>
+          <div id="NPC-2-stat-5-value"></div>
+        </div>
       </div>
-      <div class="column left">
-        <div>Name:</div>
-        <div id="NPC-2-stat-1"></div>
-        <div id="NPC-2-stat-2"></div>
-        <div id="NPC-2-stat-3"></div>
-        <div id="NPC-2-stat-4"></div>
-        <div id="NPC-2-stat-5"></div>
-      </div>
-      <div class="column">
-        <div id="NPC-2-name"></div>
-        <div id="NPC-2-stat-1-value"></div>
-        <div id="NPC-2-stat-2-value"></div>
-        <div id="NPC-2-stat-3-value"></div>
-        <div id="NPC-2-stat-4-value"></div>
-        <div id="NPC-2-stat-5-value"></div>
-      </div>
-      <div class="column left">
-        <div>Name:</div>
-        <div id="NPC-3-stat-1"></div>
-        <div id="NPC-3-stat-2"></div>
-        <div id="NPC-3-stat-3"></div>
-        <div id="NPC-3-stat-4"></div>
-        <div id="NPC-3-stat-5"></div>
-      </div>
-      <div class="column">
-        <div id="NPC-3-name"></div>
-        <div id="NPC-3-stat-1-value"></div>
-        <div id="NPC-3-stat-2-value"></div>
-        <div id="NPC-3-stat-3-value"></div>
-        <div id="NPC-3-stat-4-value"></div>
-        <div id="NPC-3-stat-5-value"></div>
+      <div>
+        <div class="column left">
+          <div>Name:</div>
+          <div id="NPC-3-stat-1"></div>
+          <div id="NPC-3-stat-2"></div>
+          <div id="NPC-3-stat-3"></div>
+          <div id="NPC-3-stat-4"></div>
+          <div id="NPC-3-stat-5"></div>
+        </div>
+        <div class="column">
+          <div id="NPC-3-name"></div>
+          <div id="NPC-3-stat-1-value"></div>
+          <div id="NPC-3-stat-2-value"></div>
+          <div id="NPC-3-stat-3-value"></div>
+          <div id="NPC-3-stat-4-value"></div>
+          <div id="NPC-3-stat-5-value"></div>
+        </div>
       </div>
     </div>
     <div><div id="next-button">Next Batch</div></div>
