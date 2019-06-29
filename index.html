@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discount FaTT NPCs</title>
+    <meta charset="UTF-8" />
+    <style>
+      html {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+      }
+
+      #npcs {
+        display: flex;
+        justify-content: center;
+      }
+
+      .column {
+        min-width: calc(100vw / 8);
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+
+      .column.left {
+        font-weight: bold;
+        text-align: right;
+      }
+
+      .column > div {
+        padding: 0.25rem 0.5rem;
+      }
+
+
+      #next-button {
+        cursor: pointer;
+        width: 16ch;
+        margin: auto;
+        padding: 0.25rem;
+        background-color: #bbbbc0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0.25rem 0.25rem 0 #000000;
+      }
+
+      #next-button:active {
+        transform: translate(0.25rem, 0.25rem);
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Discount FaTT NPC Names</h1>
+    <div id="npcs">
+      <div class="column left">
+        <div>Name:</div>
+        <div id="NPC-1-stat-1"></div>
+        <div id="NPC-1-stat-2"></div>
+        <div id="NPC-1-stat-3"></div>
+        <div id="NPC-1-stat-4"></div>
+        <div id="NPC-1-stat-5"></div>
+      </div>
+      <div class="column">
+        <div id="NPC-1-name"></div>
+        <div id="NPC-1-stat-1-value"></div>
+        <div id="NPC-1-stat-2-value"></div>
+        <div id="NPC-1-stat-3-value"></div>
+        <div id="NPC-1-stat-4-value"></div>
+        <div id="NPC-1-stat-5-value"></div>
+      </div>
+      <div class="column left">
+        <div>Name:</div>
+        <div id="NPC-2-stat-1"></div>
+        <div id="NPC-2-stat-2"></div>
+        <div id="NPC-2-stat-3"></div>
+        <div id="NPC-2-stat-4"></div>
+        <div id="NPC-2-stat-5"></div>
+      </div>
+      <div class="column">
+        <div id="NPC-2-name"></div>
+        <div id="NPC-2-stat-1-value"></div>
+        <div id="NPC-2-stat-2-value"></div>
+        <div id="NPC-2-stat-3-value"></div>
+        <div id="NPC-2-stat-4-value"></div>
+        <div id="NPC-2-stat-5-value"></div>
+      </div>
+      <div class="column left">
+        <div>Name:</div>
+        <div id="NPC-3-stat-1"></div>
+        <div id="NPC-3-stat-2"></div>
+        <div id="NPC-3-stat-3"></div>
+        <div id="NPC-3-stat-4"></div>
+        <div id="NPC-3-stat-5"></div>
+      </div>
+      <div class="column">
+        <div id="NPC-3-name"></div>
+        <div id="NPC-3-stat-1-value"></div>
+        <div id="NPC-3-stat-2-value"></div>
+        <div id="NPC-3-stat-3-value"></div>
+        <div id="NPC-3-stat-4-value"></div>
+        <div id="NPC-3-stat-5-value"></div>
+      </div>
+    </div>
+    <div><div id="next-button">Next Batch</div></div>
+    <script src="src.js"></script>
+  </body>
+</html>
