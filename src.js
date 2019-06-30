@@ -124,7 +124,33 @@ const lists = {
     "Dogs: Ohayo",
     "Autumn Toothkeeper",
     "Plausible Maud",
-    "Ampersands Often"
+    "Ampersands Often",
+    "Guxue Lightrider",
+    "Peoria Burgergun",
+    "Big Yikes",
+    "Jikes Runewelder",
+    "Mood Enough",
+    "Thwartlance Bloodrot XXIV",
+    "Reverse Tracheotomy Tuesday",
+    "Dichotomous Wife-Energy",
+    "Gourdhampton Tubewallop",
+    "Incontrovertible Kill-Field",
+    "Relative Designator",
+    "Irreversable Flex",
+    "Cherenkov Stutterglow",
+    "E.M. Skipglider",
+    "\"Unsinkable\" Radio Esposito",
+    "Reversible Junebug",
+    "Proprietous Oscar",
+    "Entropic Tidecatcher",
+    "Doubledoug Meerkat",
+    "Daring Scopecrawler",
+    "Maximum Horkheimer",
+    "Median Headroom",
+    "Loper Wave-Motion",
+    "Distant Action",
+    "Radar Skipjacker",
+    "Liliput Erstwhile"
   ],
 
   stats: [
@@ -180,11 +206,20 @@ const lists = {
     "Crime",
     "Justice",
     "Time",
-    "DPS"
+    "DPS",
+    "Tables",
+    "Pulchritude",
+    "Power",
+    "Strength (inner)",
+    "Opulence",
+    "Luck",
+    "Dad Energy",
+    "Thiccness",
+    "Decisiveness"
   ]
 };
 
-const VERSION = "1";
+const VERSION = "2";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
