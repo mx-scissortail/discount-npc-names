@@ -150,7 +150,22 @@ const lists = {
     "Loper Wave-Motion",
     "Distant Action",
     "Radar Skipjacker",
-    "Liliput Erstwhile"
+    "Liliput Erstwhile",
+    "Mothra Doubledown",
+    "Minsk Occultant",
+    "Doomed Rhymeweaver",
+    "Marine Okemba",
+    "Subtextual Emile",
+    "Bathos Pathos",
+    "Baphometa Rashid",
+    "Small Emperor Moth",
+    "Saturnia Inkwell",
+    "Pavel Timeheist",
+    "Lepidoptera Poppycock",
+    "Motheaten Dynasty",
+    "Echopraxia Wallander",
+    "Lattitude of Aplasia",
+    "Leopold Imbroglio"
   ],
 
   stats: [
@@ -229,11 +244,13 @@ const lists = {
     "Dreams",
     "Modesty",
     "Guilt",
-    "Boats Destroyed"
+    "Boats Destroyed",
+    "Audacity",
+    "Cumulative Upkeep"
   ]
 };
 
-const VERSION = "2";
+const VERSION = "3";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
