@@ -329,7 +329,7 @@ function die (sides) {
 }
 
 function randStat () {
-  return die(7) + die(7) + die(8) - 2;
+  return die(10) + die(11) - 1;
 }
 
 function generateNPC (id) {
