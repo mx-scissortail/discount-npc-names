@@ -261,7 +261,7 @@ const lists = {
   ]
 };
 
-const VERSION = "3";
+const VERSION = "4";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
