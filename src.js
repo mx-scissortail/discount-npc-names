@@ -130,7 +130,7 @@ const lists = {
     "Big Yikes",
     "Jikes Runewelder",
     "Mood Enough",
-    "Thwartlance Bloodrot XXIV",
+    "Thwartlance Bloodrot",
     "Reverse Tracheotomy Tuesday",
     "Dichotomous Wife-Energy",
     "Gourdhampton Tubewallop",
@@ -215,7 +215,21 @@ const lists = {
     "Luck",
     "Dad Energy",
     "Thiccness",
-    "Decisiveness"
+    "Decisiveness",
+    "Japery",
+    "Questions",
+    "Defense",
+    "Legs",
+    "War",
+    "Miscellaneous",
+    "Rank",
+    "Distinguishable Moms",
+    "Eyes",
+    "Experiences",
+    "Dreams",
+    "Modesty",
+    "Guilt",
+    "Boats Destroyed"
   ]
 };
 
