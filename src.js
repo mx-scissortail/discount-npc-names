@@ -169,13 +169,46 @@ const lists = {
     "Smoke Toastwhip",
     "Micron Gunn",
     "Pitbull Saebyolbe",
-    "Mox Atrides",
+    "Mox Atriedes",
     "Mossdrenched, Forgotten",
     "Illith Truncheon",
     "Beast Moog",
     "Lesbian Moonbase",
     "Tyranica Walters",
-    "Memory Gospel"
+    "Memory Gospel",
+    "Anne Allegory",
+    "A Problem",
+    "Wise but Malfeasant Ghost",
+    "Body Politics",
+    "Molten Core",
+    "Phantom Tim Syndrome",
+    "Hell-For-Leather Protocol",
+    "Adult Headlong",
+    "Disquiet Elizabeth",
+    "Winter's Discontent",
+    "Eternal Shortsweather",
+    "Sophia, Our Lady of Perpetual Motion",
+    "Cool and Laborious Paul",
+    "Indefatigable Honeymap",
+    "Meticulous Grace",
+    "Contiguous Emma",
+    "Tangible Tyler",
+    "Indeterminacy of Translation",
+    "Inscrutability of Reference",
+    "Avery Undisproven",
+    "Catherine Bloodritual Wellingsley III",
+    "The Boat From \"Jaws\"",
+    "Judge Aristophanes",
+    "Cool Official",
+    "Careful Discourse",
+    "Football Miette",
+    "Intelligible Penelope",
+    "Adidas Funk",
+    "K.O. Brooklyn",
+    "Island of Esther",
+    "Iris Ultra-Light",
+    "Madeline Twice-Arisen",
+    "Hadley Hopeless"
   ],
 
   stats: [
@@ -257,11 +290,13 @@ const lists = {
     "Boats Destroyed",
     "Audacity",
     "Cumulative Upkeep",
-    "Memorability"
+    "Memorability",
+    "Cardinality",
+    "Problems"
   ]
 };
 
-const VERSION = "4";
+const VERSION = "5";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
@@ -289,8 +324,12 @@ function fill (id, field, value) {
   document.getElementById(`NPC-${id}-${field}`).innerHTML = value;
 }
 
+function die (sides) {
+  return Math.ceil(Math.random() * sides);
+}
+
 function randStat () {
-  return Math.floor(Math.random() * (20)) + 1;
+  return die(7) + die(7) + die(8) - 2;
 }
 
 function generateNPC (id) {
