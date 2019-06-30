@@ -55,7 +55,6 @@ const lists = {
     "Nosebleed Seats",
     "Milkworms Milkworms",
     "Honest Dirtprince",
-    "Dale of the Great Plains",
     "Great Granite Spire",
     "Cousin Doomrider",
     "Perihelia Griefhaven",
@@ -165,7 +164,18 @@ const lists = {
     "Motheaten Dynasty",
     "Echopraxia Wallander",
     "Lattitude of Aplasia",
-    "Leopold Imbroglio"
+    "Leopold Imbroglio",
+    "Fam Nightmissile",
+    "Smoke Toastwhip",
+    "Micron Gunn",
+    "Pitbull Saebyolbe",
+    "Mox Atrides",
+    "Mossdrenched, Forgotten",
+    "Illith Truncheon",
+    "Beast Moog",
+    "Lesbian Moonbase",
+    "Tyranica Walters",
+    "Memory Gospel"
   ],
 
   stats: [
@@ -231,14 +241,14 @@ const lists = {
     "Dad Energy",
     "Thiccness",
     "Decisiveness",
-    "Japery",
+    "Jest",
     "Questions",
     "Defense",
     "Legs",
     "War",
     "Miscellaneous",
     "Rank",
-    "Distinguishable Moms",
+    "Moms",
     "Eyes",
     "Experiences",
     "Dreams",
@@ -246,7 +256,8 @@ const lists = {
     "Guilt",
     "Boats Destroyed",
     "Audacity",
-    "Cumulative Upkeep"
+    "Cumulative Upkeep",
+    "Memorability"
   ]
 };
 
