@@ -315,7 +315,9 @@ const lists = {
     "Cumulative Upkeep",
     "Memorability",
     "Cardinality",
-    "Problems"
+    "Problems",
+    "Hobbies",
+    "Carbon Footprint"
   ],
 
   jobs: [
@@ -528,7 +530,7 @@ const lists = {
 
 */
 
-const VERSION = "8";
+const VERSION = "9";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
@@ -562,23 +564,46 @@ function die (sides) {
   return Math.ceil(Math.random() * sides);
 }
 
-function randStat () {
-  return die(10) + die(11) - 1;
+function choose (array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+function getStat () {
+  let stat = nextStat();
+  if (stat === "Vertical Leap") {
+    return [stat, 8];
+  } else if (stat === "Problems") {
+    return [stat, choose([99, 0, 1])];
+  } else if (die(20) === 1) {
+    return [stat, choose(["2d6", "3d6", "4d8", "2d10", "2d6 + 2", "+" + die(5), "-" + die(5)])];
+  }
+  return [stat, die(10) + die(11) - 1];
 }
 
 function generateNPC (id) {
+  let stat, value;
   fill(id, "name", nextName());
-  fill(id, "job", nextJob());
-  fill(id, "stat-1", nextStat() + ":");
-  fill(id, "stat-1-value", randStat());
-  fill(id, "stat-2", nextStat() + ":");
-  fill(id, "stat-2-value", randStat());
-  fill(id, "stat-3", nextStat() + ":");
-  fill(id, "stat-3-value", randStat());
-  fill(id, "stat-4", nextStat() + ":");
-  fill(id, "stat-4-value", randStat());
-  fill(id, "stat-5", nextStat() + ":");
-  fill(id, "stat-5-value", randStat());
+  if (Math.random() < 0.33) {
+    stat = "Occupation";
+    value = nextJob();
+  } else {
+    [stat, value] = getStat();
+  }
+  fill(id, "stat-1", stat + ":");
+  fill(id, "stat-1-value", value);
+  [stat, value] = getStat();
+  fill(id, "stat-2", stat + ":");
+  fill(id, "stat-2-value", value);
+  [stat, value] = getStat();
+  fill(id, "stat-3", stat + ":");
+  fill(id, "stat-3-value", value);
+  [stat, value] = getStat();
+  fill(id, "stat-4", stat + ":");
+  fill(id, "stat-4-value", value);
+  [stat, value] = getStat();
+  fill(id, "stat-5", stat + ":");
+  fill(id, "stat-5-value", value);
+  
 }
 
 
