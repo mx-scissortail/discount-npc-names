@@ -231,7 +231,10 @@ const lists = {
     "Sylvester Vestsilver TestSvelter Toad",
     "Talcum Wombfeather",
     "Litigious Aurora",
-    "Calliope Coolhand"
+    "Calliope Coolhand",
+    "Yakety Onassis",
+    "Tiberia Slowjam",
+    "Jung Pope"
   ],
 
   stats: [
@@ -317,7 +320,8 @@ const lists = {
     "Cardinality",
     "Problems",
     "Hobbies",
-    "Carbon Footprint"
+    "Carbon Footprint",
+    "Submersibility"
   ],
 
   jobs: [
@@ -575,7 +579,7 @@ function getStat () {
   } else if (stat === "Problems") {
     return [stat, choose([99, 0, 1])];
   } else if (die(20) === 1) {
-    return [stat, choose(["2d6", "3d6", "4d8", "2d10", "2d6 + 2", "+" + die(5), "-" + die(5)])];
+    return [stat, choose([die(5)+"-ish", "2d6", "3d6", "4d8", "2d10", "2d6 + 2", "+" + die(5), "-" + die(5)])];
   }
   return [stat, die(10) + die(11) - 1];
 }
