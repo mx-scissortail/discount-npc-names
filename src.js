@@ -231,7 +231,7 @@ const lists = {
     "Sylvester Vestsilver TestSvelter Toad",
     "Talcum Wombfeather",
     "Litigious Aurora",
-    "Camille Coolhand"
+    "Calliope Coolhand"
   ],
 
   stats: [
@@ -486,7 +486,7 @@ const lists = {
     "Deposed Sovereign",
     "Disgraced Artist",
     "Attitude Adjustment Specialist",
-    "Cataclym Adjudicant",
+    "Cataclysm Adjudicant",
     "Pickpocket",
     "Cat Burglar",
     "Hamburglar",
