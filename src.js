@@ -234,7 +234,15 @@ const lists = {
     "Calliope Coolhand",
     "Yakety Onassis",
     "Tiberia Slowjam",
-    "Jung Pope"
+    "Jung Pope",
+    "Long-Forgotten Hank Montgomery",
+    "Applesauce! :)",
+    "Whip Ghostrider",
+    "Judgemental Pete",
+    "Ol' Whispy Bootlick",
+    "Spidercoveted Narcissa",
+    "cavitation.sonoluminescence.info",
+    "Hank Williams MMXIX"
   ],
 
   stats: [
@@ -321,7 +329,8 @@ const lists = {
     "Problems",
     "Hobbies",
     "Carbon Footprint",
-    "Submersibility"
+    "Submersibility",
+    "Baggage"
   ],
 
   jobs: [
@@ -526,7 +535,8 @@ const lists = {
     "Karate Champion",
     "Knife Instructor",
     "Holographic Dietician",
-    "Illusory"
+    "Illusory",
+    "Eschatologist"
   ]
 };
 
@@ -534,7 +544,7 @@ const lists = {
 
 */
 
-const VERSION = "9";
+const VERSION = "10";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
