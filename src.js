@@ -222,7 +222,7 @@ const lists = {
     "Laila Chesscaptain",
     "Mastodon's Discount",
     "Tony Hawk",
-    "Eloise Totuga",
+    "Eloise Tortuga",
     "Legg Day",
     "Foghorn Context",
     "Strongsister Nightvision",
@@ -450,7 +450,7 @@ const lists = {
     "Psychic",
     "Propagandist",
     "Schoolmarm",
-    "Holographic Attourney",
+    "Attorney General",
     "Assassin",
     "Getaway Driver",
     "Drone Pilot",
@@ -485,7 +485,7 @@ const lists = {
     "Prince (Wales)",
     "Deposed Sovereign",
     "Disgraced Artist",
-    "Attitude Adjuster",
+    "Attitude Adjustment Specialist",
     "Cataclym Adjudicant",
     "Pickpocket",
     "Cat Burglar",
@@ -509,13 +509,18 @@ const lists = {
     "Barbarian",
     "Ball-Point Pen Thief",
     "Thought Leader",
-    "Ahistorical Revisionist",
+    "Historical Revisionist",
     "Contortionist",
     "Rogue Chiropractor",
     "Forum Moderator",
     "Ringleader",
     "Circus Abolitionist",
-    "Bug"
+    "Bug",
+    "Henchperson",
+    "Karate Champion",
+    "Knife Instructor",
+    "Holographic Dietician",
+    "Illusory"
   ]
 };
 
@@ -523,7 +528,7 @@ const lists = {
 
 */
 
-const VERSION = "7";
+const VERSION = "8";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
