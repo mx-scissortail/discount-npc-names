@@ -135,7 +135,7 @@ const lists = {
     "Gourdhampton Tubewallop",
     "Incontrovertible Kill-Field",
     "Relative Designator",
-    "Irreversable Flex",
+    "Irreversible Flex",
     "Cherenkov Stutterglow",
     "E.M. Skipglider",
     "\"Unsinkable\" Radio Esposito",
@@ -179,7 +179,6 @@ const lists = {
     "Anne Allegory",
     "A Problem",
     "Wise but Malfeasant Ghost",
-    "Body Politics",
     "Molten Core",
     "Phantom Tim Syndrome",
     "Hell-For-Leather Protocol",
@@ -296,7 +295,7 @@ const lists = {
   ]
 };
 
-const VERSION = "5";
+const VERSION = "6";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
