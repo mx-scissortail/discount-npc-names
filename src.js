@@ -178,7 +178,6 @@ const lists = {
     "Anne Allegory",
     "A Problem",
     "Wise but Malfeasant Ghost",
-    "Molten Core",
     "Phantom Tim Syndrome",
     "Hell-For-Leather Protocol",
     "Adult Headlong",
@@ -258,7 +257,7 @@ const lists = {
     "Leftbeef Odinsdottir",
     "Godswill Song",
     "Ode Signifier",
-    "Kommsüsser Todd",
+    "Kim Süsser Tod",
     "Algebra Knifemuseum",
     "Guts Isomorph",
     "T.U.G.B.O.A.T.",
@@ -597,7 +596,9 @@ const lists = {
     "Knife Instructor",
     "Holographic Dietician",
     "Illusory",
-    "Eschatologist"
+    "Eschatologist",
+    "Goblin",
+    "Unstable Boyfriend Prototype"
   ]
 };
 
@@ -605,7 +606,7 @@ const lists = {
 
 */
 
-const VERSION = "12";
+const VERSION = "13";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
@@ -650,7 +651,7 @@ function getStat () {
   } else if (stat === "Problems") {
     return [stat, choose([99, 0, 1])];
   } else if (die(20) === 1) {
-    return [stat, choose([die(5)+"-ish", "2d6", "3d6", "4d8", "2d10", "2d6 + 2", "+" + die(5), "-" + die(5)])];
+    return [stat, choose([die(5)+"-ish", "2d6", "3d6", "4d8", "2d10", "2d6 + 2", "+" + die(5), "-" + die(5)]), "none"]; 
   }
   return [stat, die(10) + die(11) - 1];
 }
