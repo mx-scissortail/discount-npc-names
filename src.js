@@ -279,7 +279,7 @@ const lists = {
     "Ligature Antiquity",
     "Winsome Pasquale",
     "Sanguine Turbinado",
-    "Albatross Rogelio",
+    "Google Albatross",
     "Bennigan's Capricorn",
     "Celementine's Particulate",
     "Overhead Pressure",
@@ -605,7 +605,7 @@ const lists = {
 
 */
 
-const VERSION = "11";
+const VERSION = "12";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
@@ -675,10 +675,6 @@ function generateNPC (id) {
   [stat, value] = getStat();
   fill(id, "stat-4", stat + ":");
   fill(id, "stat-4-value", value);
-  [stat, value] = getStat();
-  fill(id, "stat-5", stat + ":");
-  fill(id, "stat-5-value", value);
-  
 }
 
 
