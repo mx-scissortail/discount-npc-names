@@ -302,7 +302,9 @@ const lists = {
     "Heat Copkill",
     "Juice Trashfire",
     "Twiceduke Splines",
-    "CatVatican Reticulant"
+    "CatVatican Reticulant",
+    "Apple Beware",
+    "Lukewarm Williams"
   ],
 
   stats: [
@@ -390,7 +392,12 @@ const lists = {
     "Hobbies",
     "Carbon Footprint",
     "Submersibility",
-    "Baggage"
+    "Baggage",
+    "Fingers",
+    "Platonic Ideals",
+    "Spite",
+    "Sustainability",
+    "#1 Hit Singles"
   ],
 
   jobs: [
@@ -598,7 +605,11 @@ const lists = {
     "Illusory",
     "Eschatologist",
     "Goblin",
-    "Unstable Boyfriend Prototype"
+    "Unstable Boyfriend Prototype",
+    "Bardbarian (a bard who is also a barbarian)",
+    "Creature",
+    "Disgraced Youtuber",
+    "Reality Theorist"
   ]
 };
 
