@@ -1,5 +1,5 @@
 const lists = {
-  "names": [
+  names: [
     "Wet William",
     "Blaster Keaton",
     "Butch Sunbeams",
@@ -390,7 +390,14 @@ const lists = {
     "Hobbies",
     "Carbon Footprint",
     "Submersibility",
-    "Baggage"
+    "Baggage",
+    "Sportsmanship",
+    "Hot Dogsmanship",
+    "Plenitude",
+    "Archery",
+    "Pronouns",
+    "Backstory", 
+    "Communism"
   ],
 
   jobs: [
@@ -443,7 +450,7 @@ const lists = {
     "Art Critic",
     "Entropy Reverser",
     "Mean Bird",
-    "Class Traitor",
+    "Traitor",
     "Geometer",
     "Witch",
     "Crab Singer",
@@ -542,7 +549,7 @@ const lists = {
     "Freelance Librarian",
     "Libertine",
     "Director of Social Engineering",
-    "Cosmonaut",
+    "Freelance Cosmonaut",
     "Vice President",
     "Concrete Form Tube",
     "Mannequin",
@@ -598,21 +605,203 @@ const lists = {
     "Illusory",
     "Eschatologist",
     "Goblin",
-    "Unstable Boyfriend Prototype"
+    "Unstable Boyfriend Prototype",
+    "Bourgeois",
+    "Petite bourgeois",
+    "Proletariat",
+    "Lumpenproletariat",
+    "None to speak of",
+    "Dry Nurse"
+  ],
+
+  // moves: [
+  //   "Monster Mash",
+  //   "Regular Kick"
+  // ],
+  
+  spells: [
+    "Tragic Missile",
+    "Death Touch",
+    "Near-Death Touch",
+    "Annoying Touch",
+    "Poke",
+    "Create Salmon",
+    "Dispel Salmon",
+    "Speak with Jeff",
+    "Reason With Insects",
+    "Oops! All Centipedes",
+    "Detect Magic Johnson",
+    "Magic Fingers",
+    "Cone of Awkwardness",
+    "Contact Dad",
+    "Beefening",
+    "Protection from Wi-Fi",
+    "Biteass",
+    "Greased Lightning",
+    "Mirthquake",
+    "Detect Flirtation",
+    "Dealer's Choice"
+  ],
+
+  bonuses: [
+    "Fighting",
+    "Fishing",
+    "Role Playing",
+    "Charcuterie",
+    "Defense against the fine arts",
+    "Hacking",
+    "Martial arts (all kinds)",
+    "Breath (all kinds)",
+    "Executive function",
+    "Kissing",
+    "Dancing (salsa)",
+    "Dancing (dirty)",
+    "Breakdancing ",
+    "Freestyle rapping",
+    "Smalltalk",
+    "Big talk",
+    "Improv comedy",
+    "First aid",
+    "Second aid",
+    "Narration",
+    "Fine arts",
+    "Sailing",
+    "Kayaking",
+    "Wrestling ",
+    "Karate",
+    "Judo",
+    "Cooking",
+    "Rhetoric",
+    "Fast talking",
+    "Massage",
+    "Knots (nautical)",
+    "Gardening",
+    "Telepathy",
+    "Gaming",
+    "Juggling",
+    "Juggling (contact)",
+    "Snake charming",
+    "Horse taming",
+    "Whistling",
+    "Jumping (long)",
+    "Arm wrestling",
+    "Tickle resistance",
+    "Swimming",
+    "Bird watching",
+    "Wiggling",
+    "Squirming",
+    "Computers",
+    "Poetry",
+    "Poetry (free verse)",
+    "Poetry (haiku)",
+    "Calligraphy",
+    "Vape tricks",
+    "Skateboarding",
+    "Roller blading",
+    "Jousting",
+    "Beekeeping",
+    "Astrology",
+    "Lore",
+    "Lore (fictional)",
+    "Beatboxing",
+    "Cake decoration",
+    "Breaking & entering",
+    "Larceny",
+    "Screenwriting",
+    "Knife skills",
+    "Biting",
+    "Violence",
+    "Sex (vanilla)",
+    "Sex (weird)",
+    "Arithmetic",
+    "Tax preparation",
+    "Yoga",
+    "Cold reading",
+    "Flirting",
+    "Photography",
+    "Lateral thinking",
+    "Gossip",
+    "Spanish",
+    "Gunfightistry",
+    "Basketball",
+    "Karaoke",
+    "Powerlifting",
+    "Running",
+    "Personal hygiene",
+    "Epidemiology",
+    "Improv dentistry",
+    "Chooglin'",
+    "Winging it",
+    "Skincare",
+    "Jokes",
+    "Hood rat shit",
+    "Etiquette",
+    "Jazz",
+    "Cultural sensitivity",
+    "Expectation management",
+    "Committing to the bit",
+    "Nintendo"
+  ],
+
+  weapons: [
+    "Nunchucks",
+    "Throwing stars",
+    "Throwing darts",
+    "Throwing rodents",
+    "Sword",
+    "Katana (real)",
+    "Katana (mall)",
+    "Great sword",
+    "Sword (oversized, comedic)",
+    "Gun",
+    "Hammer",
+    "Hammer (ball peen)",
+    "Knife",
+    "Gavel",
+    "Stick",
+    "Stick (big)",
+    "Boomerang",
+    "Rock",
+    "Guitar",
+    "Guitar (acoustic)",
+    "Guitarrón mexicano",
+    "War tuba",
+    "Saxophone",
+    "Clarinet",
+    "Bassoon",
+    "Combat flute",
+    "Nuclear football",
+    "Grenade",
+    "Helicopter",
+    "Mean bird",
+    "Jar full of bees",
+    "Wine bottle",
+    "Toyota Camry",
+    "Dog (unfriendly)",
+    "Spellbook",
+    "Wit",
+    "Trained snake",
+    "Biceps",
+    "Glutes"
   ]
 };
+
+
 
 /* 
 
 */
 
-const VERSION = "13";
+const VERSION = "14";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
   window.localStorage.setItem("names", "[]");
   window.localStorage.setItem("jobs", "[]");
   window.localStorage.setItem("stats", "[]");
+  window.localStorage.setItem("bonuses", "[]");
+  window.localStorage.setItem("weapons", "[]");
+  window.localStorage.setItem("spells", "[]");
 }
 
 function generator (key) {
@@ -631,6 +820,9 @@ function generator (key) {
 const nextName = generator("names");
 const nextJob = generator("jobs");
 const nextStat = generator("stats");
+const nextBonus = generator("bonuses");
+const nextWeapon = generator("weapons");
+const nextSpell = generator("spells");
 
 function fill (id, field, value) {
   document.getElementById(`NPC-${id}-${field}`).innerHTML = value;
@@ -656,11 +848,27 @@ function getStat () {
   return [stat, die(10) + die(11) - 1];
 }
 
+function getBonus () {
+  let bonus = nextBonus();
+  return [bonus, choose(["-2", "-1", "+1", "+2", "+3"])]
+}
+
+function getBonuses () {
+  let bonuses = [];
+  let num = choose([1, 1, 1, 1, 2, 2, 3]);
+  for (let i = 0; i < num; i++) {
+    let bonus = nextBonus();
+    let value = choose(["-2", "-1", "+1", "+2", "+3"]);
+    bonuses.push(`${value} to ${bonus}`);
+  }
+  return bonuses.join("\n");
+}
+
 function generateNPC (id) {
   let stat, value;
   fill(id, "name", nextName());
   if (Math.random() < 0.33) {
-    stat = "Occupation";
+    stat = "Class";
     value = nextJob();
   } else {
     [stat, value] = getStat();
@@ -676,6 +884,17 @@ function generateNPC (id) {
   [stat, value] = getStat();
   fill(id, "stat-4", stat + ":");
   fill(id, "stat-4-value", value);
+  let num = Math.random();
+  if (num < 0.4) {
+    fill(id, "stat-5", "Bonuses:");
+    fill(id, "stat-5-value", getBonuses());
+  } else if (num < 0.8) {
+    fill(id, "stat-5", "Signature Weapon:");
+    fill(id, "stat-5-value", nextWeapon());
+  } else {
+    fill(id, "stat-5", "Signature Spell:");
+    fill(id, "stat-5-value", nextSpell());
+  }
 }
 
 
