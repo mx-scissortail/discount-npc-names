@@ -302,7 +302,18 @@ const lists = {
     "Heat Copkill",
     "Juice Trashfire",
     "Twiceduke Splines",
-    "CatVatican Reticulant"
+    "CatVatican Reticulant",
+    "Antarctican Thawed",
+    "Peristalsis Cronenberg",
+    "Scam Likely",
+    "Hoagie Omakase",
+    "Perfect Shotgun Heartbreak",
+    "Garnacle Booze",
+    "JPEG Van Helsing",
+    "You, the reader",
+    "The Girl Reading This",
+    "Harmonic Mario",
+    "Yucatan Sam"
   ],
 
   stats: [
@@ -786,13 +797,7 @@ const lists = {
   ]
 };
 
-
-
-/* 
-
-*/
-
-const VERSION = "14";
+const VERSION = "15";
 
 if (window.localStorage.getItem("version") !== VERSION) {
   window.localStorage.setItem("version", VERSION);
