@@ -4,144 +4,143 @@
     <title>Ellie's Discount NPC Emporium</title>
     <meta charset="UTF-8" />
     <style>
-      html {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-        white-space: nowrap;
+      * {
+        box-sizing: border-box;
       }
-
-      h2 {
-        font-size: 1.25rem;
-        font-style: italic;
-        font-weight: normal;
-        margin-bottom: 1rem;
-      }
-
-      #npcs {
+      body {
         display: flex;
-        justify-content: center;
-      }
-
-      @media (orientation: landscape) {
-        #npcs {
-          flex-direction: row;
-        }
-
-        .column {
-          min-width: calc(100vw / 8);
-        }
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        white-space: nowrap;
+        color: rgba(0, 0, 0, 0.7);
       }
       
-      @media (orientation: portrait) {
-        #npcs {
-          flex-direction: column;
-        }
-
-        .column {
-          min-width: 50vw;
-        }
+      #background {
+        z-index:-1;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        background: #ffffff; 
       }
 
-      #npcs > div {
+      #header {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 75%;
+        margin-bottom: 4rem;
+      }
+
+      #header > * {
+        text-align: center;
+      }
+
+      #scroll-sentinel {
+        padding: 1rem;
+      }
+
+      #list {
+        width: 100%;
+      }
+
+      .npc {
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+        margin: 3rem 0;
+      }
+
+      .placeholder {
+        width: 100%;
+        height: 3rem;
+        border: 1px dashed rgba(0, 0, 0, 0.3);
+        border-top: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+
+      .card {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        backface-visibility:hidden;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        cursor: pointer;
+      }
+
+      .card.main {
+        width: 100%;
+      }
+
+      .card.info {
+        width: 100%;
+        border-top: 0;
+        cursor: default;
+      }
+
+      .card.expanded {
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+        cursor: default;
       }
 
       .column {
-        text-align: left;
-        margin-bottom: 2rem;
+        width: 100%;
       }
 
-      .column.left {
+      .column > * {
+        margin: 0.5rem;
+      }
+
+      .table {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .title {
         font-weight: bold;
         text-align: right;
       }
 
-      .column > div {
-        padding: 0.25rem 0.5rem;
+      .name {
+        font-size: x-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .text {
         white-space: pre;
       }
 
-
-      #next-button {
-        cursor: pointer;
-        width: 16ch;
-        margin: auto;
-        padding: 0.25rem;
-        background-color: #bbbbc0;
-        font-family: Arial, Helvetica, sans-serif;
-        box-shadow: 0.25rem 0.25rem 0 #000000;
-      }
-
-      #next-button:active {
-        transform: translate(0.25rem, 0.25rem);
-        box-shadow: none;
-      }
-
-      #next-button-container {
-        margin: 2rem;
+      h2 {
+        font-style: italic;
       }
     </style>
   </head>
   <body>
-    <h1>Ellie's Discount NPC Emporium</h1>
-    <h2>"All Sales Are Final"</h2>
-    <div id="next-button-container"><div id="next-button">Next Batch</div></div>
-    <div id="npcs">
+    <div id="background"></div>
+    <div id="header">
       <div>
-        <div class="column left">
-          <div>Name:</div>
-          <div id="NPC-1-stat-1"></div>
-          <div id="NPC-1-stat-2"></div>
-          <div id="NPC-1-stat-3"></div>
-          <div id="NPC-1-stat-4"></div>
-          <div id="NPC-1-stat-5"></div>
-        </div>
-        <div class="column">
-          <div id="NPC-1-name"></div>
-          <div id="NPC-1-stat-1-value"></div>
-          <div id="NPC-1-stat-2-value"></div>
-          <div id="NPC-1-stat-3-value"></div>
-          <div id="NPC-1-stat-4-value"></div>
-          <div id="NPC-1-stat-5-value"></div>
-        </div>
-      </div>
-      <div>
-        <div class="column left">
-          <div>Name:</div>
-          <div id="NPC-2-stat-1"></div>
-          <div id="NPC-2-stat-2"></div>
-          <div id="NPC-2-stat-3"></div>
-          <div id="NPC-2-stat-4"></div>
-          <div id="NPC-2-stat-5"></div>
-        </div>
-        <div class="column">
-          <div id="NPC-2-name"></div>
-          <div id="NPC-2-stat-1-value"></div>
-          <div id="NPC-2-stat-2-value"></div>
-          <div id="NPC-2-stat-3-value"></div>
-          <div id="NPC-2-stat-4-value"></div>
-          <div id="NPC-2-stat-5-value"></div>
-        </div>
-      </div>
-      <div>
-        <div class="column left">
-          <div>Name:</div>
-          <div id="NPC-3-stat-1"></div>
-          <div id="NPC-3-stat-2"></div>
-          <div id="NPC-3-stat-3"></div>
-          <div id="NPC-3-stat-4"></div>
-          <div id="NPC-3-stat-5"></div>
-        </div>
-        <div class="column">
-          <div id="NPC-3-name"></div>
-          <div id="NPC-3-stat-1-value"></div>
-          <div id="NPC-3-stat-2-value"></div>
-          <div id="NPC-3-stat-3-value"></div>
-          <div id="NPC-3-stat-4-value"></div>
-          <div id="NPC-3-stat-5-value"></div>
-        </div>
+        <h1>Ellie's Discount NPC Emporium</h1>
+        <h2>"New And Supposedly Improved!"</h2>
+
       </div>
     </div>
-    <script src="src.js"></script>
+    <div id="list">
+    </div>
+    <div id="scroll-sentinel">Reload</div>
+    <script type="module" src="src.js"></script>
   </body>
 </html>
