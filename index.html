@@ -41,8 +41,16 @@
         padding: 1rem;
       }
 
-      #list {
-        width: 100%;
+      @media (orientation: portrait) {
+        #list {
+          width: 100%;
+        }
+      }
+
+      @media (orientation: landscape) {
+        #list {
+          width: 60%;
+        }
       }
 
       .npc {
