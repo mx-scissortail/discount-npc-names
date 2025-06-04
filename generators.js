@@ -842,7 +842,7 @@ const lists = {
     "Dog (unfriendly)",
     "Trained snake",
     // monkey island money joke
-    // andor money joke
+    "80 million imperial credits",
     "Wallet",
     "Chronoscepter",
     "Wand of shrinkage",
@@ -1134,7 +1134,6 @@ const lists = {
   affiliations: [
     "The Red Devil's Own Army of Laughing Bastards",
     "The Barony of Orphans",
-    "The Crown of Storms",
     "Blackjackets",
     "Freemasons",
     "Boundmasons",
